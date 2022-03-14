@@ -1,3 +1,5 @@
+;compile js
+```js
 let nbuf = Buffer.alloc(0)
 offset = 0;
 //writes a byte
@@ -19,4 +21,8 @@ njbuf = Buffer.concat([njbuf, buff])
 offset += 1
 console.log(njbuf.slice(offset - 1, offset).readInt8())
 //read bool
-console.log(njbuf.slice(offset - 1, offset).readInt8() !== 0) 
+console.log(njbuf.slice(offset - 1, offset).readInt8() !== 0)
+njbuf = Buffer.alloc(0)
+nbuf = Buffer.alloc(0)
+offset = 0
+```
