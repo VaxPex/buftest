@@ -4,7 +4,6 @@ offset = 0;
 let buf = Buffer.alloc(1)
 buf.writeInt8(0, 0);
 nbuf = Buffer.concat([nbuf, buf])
-//reads it
 offset += 1;
 //read byte
 console.log(nbuf.slice(offset - 1, offset).readInt8())
