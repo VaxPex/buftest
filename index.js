@@ -20,6 +20,7 @@ offset += 1
 console.log(njbuf.slice(offset - 1, offset).readInt8())
 //read bool
 console.log(njbuf.slice(offset - 1, offset).readInt8() !== 0)
-njbuf = Buffer.alloc(0)
-nbuf = Buffer.alloc(0)
+//i think this is a freeing
+njbuf = null
+nbuf = null
 offset = 0
